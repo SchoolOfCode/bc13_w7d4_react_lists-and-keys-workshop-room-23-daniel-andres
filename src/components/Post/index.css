@@ -2,3 +2,19 @@
   border: 10px solid fuchsia;
   width: 50vw;
 }
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.rotate {
+  animation: rotation 1s infinite linear;
+  border-radius: 50%;
+}

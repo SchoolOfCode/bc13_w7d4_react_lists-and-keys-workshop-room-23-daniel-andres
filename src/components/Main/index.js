@@ -11,7 +11,7 @@ function Main() {
 
   return <main id="main">
   {posts.map((posts)=>{
-    return <Post key={posts.postId} title={posts.title} date={posts.date} author={posts.author} text={posts.text}/>;
+    return <Post key={posts.postId} title={posts.title} date={posts.date} author={posts.author} text={posts.text} highlights={posts.highlights} img={posts.image.link} alt={posts.image.alt} />;
   })}
   </main>;
 }
