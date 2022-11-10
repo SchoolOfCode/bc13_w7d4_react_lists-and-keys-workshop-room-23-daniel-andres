@@ -12,9 +12,31 @@
     transform: rotate(359deg);
   }
 }
+@keyframes wiggle {
 
+  0% {
+    transform: translateX(2em);
+  }
+
+  40% {
+    transform: translateX(-2em);
+  }
+
+  80% {
+    transform: translateX(2em);
+  }
+
+  100% {
+    transform: translateX(2em);
+  }
+
+}
 
 .rotate {
   animation: rotation 1s infinite linear;
   border-radius: 50%;
+  filter: saturate(258%);
+  animation: wiggle 0.2s linear infinite;
+
+
 }
